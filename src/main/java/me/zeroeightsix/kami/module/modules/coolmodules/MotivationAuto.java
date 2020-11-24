@@ -22,7 +22,7 @@ public class MotivationAuto extends Module {
       if (this.delay > (Integer)this.DelayChange.getValue() * 40) {
          if (mc.player.isServerWorld()) {
             String playername = mc.player.getName();
-            List myList = Arrays.asList("§6Damn You Looking Fat Like A Cow " + playername, "§6You My Favorite PvPer " + playername, "§6Test Client On Top" + playername + "CKJM ON TOP! ", "§6You Dont Even Need Totems " + playername + " Your Too Good", "§6Remember Sexy Cow Loves You " + playername, "§6Damn " + playername + " You Da Best Simp", "§6Test Client Will Always Be Here For You " + playername, "§6I Know You Will Do Great Things With SKS " + playername, "§6PvP Takes Time And Practice Yet You Dont Need It. Weird Isnt It?", "§6Using Test Client Is The Closest Thing To Happy!", "§6" + playername + " You Are The MF PIMP", "§6 864 Knows You Da Best Pvper!", "§6Win This Fight For Dot5");
+            List myList = Arrays.asList("§6Damn You Looking Fat Like A Cow" + playername, "§6You My Favorite PvPer " + playername, "§6Test Client On Top" + playername + "CKJM ON TOP! ", "§6You Dont Even Need Totems " + playername + " Your Too Good", "§6Remember Sexy Cow Loves You " + playername, "§6Damn " + playername + " You Da Best Simp", "§6Test Client Will Always Be Here For You " + playername, "§6I Know You Will Do Great Things With SKS " + playername, "§6PvP Takes Time And Practice Yet You Dont Need It. Weird Isnt It?", "§6Using Test Client Is The Closest Thing To Happy!", "§6" + playername + " You Are The MF PIMP", "§6 864 Knows You Da Best Pvper!", "§6Win This Fight For Dot5");
             Random r = new Random();
             int randomitem = r.nextInt(myList.size());
             String randomElement = (String)myList.get(randomitem);
