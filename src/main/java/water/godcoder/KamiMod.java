@@ -46,8 +46,8 @@ import java.util.Optional;
 @Mod(modid = KamiMod.MODID, name = KamiMod.MODNAME, version = KamiMod.MODVER)
 public class KamiMod {
 
-    public static final String MODID = "hi";
-    public static final String MODNAME = "hi";
+    public static final String MODID = "hii";
+    public static final String MODNAME = "hii";
     public static final String MODVER = "test";
 
     public static final String KAMI_HIRAGANA = "\u304B\u307F";
