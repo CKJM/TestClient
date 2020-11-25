@@ -1,7 +1,7 @@
 {
   "required": true,
   "compatibilityLevel": "JAVA_8",
-  "package": "me.zeroeightsix.kami.mixin.client",
+  "package": "water.godcoder.mixin.client",
   "refmap": "mixins.kami.refmap.json",
   "client": [
     "MixinGuiChat",

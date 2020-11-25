@@ -62,7 +62,7 @@ minecraft {
     version = project.forgeVersion
     runDir = 'run'
     mappings = project.mcpVersion
-    coreMod = 'me.zeroeightsix.kami.mixin.MixinLoaderForge'
+    coreMod = 'water.godcoder.mixin.MixinLoaderForge'
     makeObfSourceJar = false
 }
 
@@ -157,7 +157,7 @@ jar {
                 'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
                 'TweakOrder': 0,
                 'FMLCorePluginContainsFMLMod': 'true',
-                'FMLCorePlugin': 'me.zeroeightsix.kami.mixin.MixinLoaderForge',
+                'FMLCorePlugin': 'water.godcoder.mixin.MixinLoaderForge',
                 'ForceLoadAsMod': 'true',
                 'FMLAT': 'kami_at.cfg'
         )
