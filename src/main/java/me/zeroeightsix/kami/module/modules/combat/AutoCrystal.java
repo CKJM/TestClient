@@ -322,7 +322,7 @@ public class AutoCrystal extends Module {
                 case OUTLINE: {
                     IBlockState iBlockState2 = mc.world.getBlockState(render);
                     Vec3d interp2 = MathUtil.interpolateEntity(mc.player, mc.getRenderPartialTicks());
-                    KamiTessellator.drawBoundingBox(iBlockState2.getSelectedBoundingBox(mc.world, render).grow(0.0020000000949949026).offset(-interp2.x, -interp2.y, -interp2.z), 1.5f, red.getValue(), green.getValue(), blue.getValue(), alpha.getValue());
+                    KamiTessellator.drawBoundingBox(iBlockState2.getSelectedBoundingBox(mc.world, render).grow(0.0020000000949949026).offset(-interp2.x, -interp2.y, -interp2.z), 1f, red.getValue(), green.getValue(), blue.getValue(), alpha.getValue());
                     break;
                 }
                 case SOLIDFLAT: {
@@ -334,7 +334,7 @@ public class AutoCrystal extends Module {
                 case FULL: {
                     IBlockState iBlockState3 = mc.world.getBlockState(render);
                     Vec3d interp3 = MathUtil.interpolateEntity(mc.player, mc.getRenderPartialTicks());
-                    KamiTessellator.drawFullBox(iBlockState3.getSelectedBoundingBox(mc.world, render).grow(0.0020000000949949026).offset(-interp3.x, -interp3.y, -interp3.z), render, 1.5f, red.getValue(), green.getValue(), blue.getValue(), alpha.getValue());
+                    KamiTessellator.drawFullBox(iBlockState3.getSelectedBoundingBox(mc.world, render).grow(0.0020000000949949026).offset(-interp3.x, -interp3.y, -interp3.z), render, 1f, red.getValue(), green.getValue(), blue.getValue(), alpha.getValue());
                     break;
                 }
             }

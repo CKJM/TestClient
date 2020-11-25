@@ -20,7 +20,7 @@ public class FakePlayer extends Module
         if (FakePlayer.mc.world == null) {
             return ;
         }
-        final EntityOtherPlayerMP fakePlayer = new EntityOtherPlayerMP((World)FakePlayer.mc.world, new GameProfile(UUID.fromString("e195d3d7-e6dc-456e-8393-e2f90816a1af"), "Hausemaster"));
+        final EntityOtherPlayerMP fakePlayer = new EntityOtherPlayerMP((World)FakePlayer.mc.world, new GameProfile(UUID.fromString("e195d3d7-e6dc-456e-8393-e2f90816a1af"), "CKJMQAQ_YT"));
         fakePlayer.copyLocationAndAnglesFrom((Entity)FakePlayer.mc.player);
         fakePlayer.rotationYawHead = FakePlayer.mc.player.rotationYawHead;
         FakePlayer.mc.world.addEntityToWorld(-100, (Entity)fakePlayer);

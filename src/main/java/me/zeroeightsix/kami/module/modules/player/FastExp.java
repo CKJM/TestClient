@@ -12,7 +12,7 @@ import net.minecraft.init.Items;
  * Created 17 October 2019 by hub
  * Updated 21 November 2019 by hub
  */
-@Module.Info(name = "FastExp", category = Module.Category.PLAYER, description = "Auto Switch to XP and throw fast")
+@Module.Info(name = "AutoExp", category = Module.Category.PLAYER, description = "Auto Switch to XP and throw fast")
 public class FastExp extends Module {
 
     private Setting<Boolean> autoThrow = register(Settings.b("Auto Throw", true));

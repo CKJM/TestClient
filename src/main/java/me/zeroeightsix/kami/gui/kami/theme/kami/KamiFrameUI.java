@@ -45,11 +45,15 @@ public class KamiFrameUI<T extends Frame> extends AbstractComponentUI<Frame> {
             return;
         glDisable(GL_TEXTURE_2D);
 
-        glColor4f(.0f,.0f,.0f,.12f);
+        glColor4f(.255f,.255f,.255f,.60f);
         RenderHelper.drawFilledRectangle(0,0,component.getWidth(),component.getHeight());
-        glColor3f(.255f,.255f,.255f);
-        glLineWidth(0.5f);
+        glColor3f(.0f,.0f,.0f);
+        glLineWidth(2.0f);
         RenderHelper.drawRectangle(0,0,component.getWidth(),component.getHeight());
+
+        glColor3f(.0f,.0f,.0f);
+        glLineWidth(2.0f);
+        RenderHelper.drawRectangle(0,0,component.getWidth(),ff.getStringHeight(component.getTitle())+ 1);
 
         GL11.glColor3f(1,1,1);
         ff.drawString(component.getWidth() / 2 - ff.getStringWidth(component.getTitle()) / 2, 1, component.getTitle());
@@ -104,10 +108,10 @@ public class KamiFrameUI<T extends Frame> extends AbstractComponentUI<Frame> {
 
         if (component.isPinneable()){
             if (component.isPinned())
-                glColor3f(1,.33f,.33f);
+                glColor3f(255,.255f,.255f);
             else
-                glColor3f(0.66f,0.66f,0.66f);
-            RenderHelper.drawCircle(7,4,2f);
+                glColor3f(255f,255f,255f);
+            RenderHelper.drawCircle(7,4,1f);
             glLineWidth(3f);
             glBegin(GL_LINES);
             {
@@ -118,7 +122,7 @@ public class KamiFrameUI<T extends Frame> extends AbstractComponentUI<Frame> {
         }
 
         if (component.equals(xLineComponent)){
-            glColor3f(.44f,.44f,.44f);
+            glColor3f(.0f,.0f,.0f);
             glLineWidth(1f);
             glBegin(GL_LINES);
             {

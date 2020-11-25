@@ -47,7 +47,7 @@ public class Trajectories extends Module {
                 GL11.glDisable(GL11.GL_DEPTH_TEST);
                 if (hit != null){
                     KamiTessellator.prepare(GL11.GL_QUADS);
-                    GL11.glColor4f(1,1,1,.3f);
+                    GL11.glColor4f(255,255,255,.39f);
                     KamiTessellator.drawBox(hit, 0x33ffffff, GeometryMasks.FACEMAP.get(flightPath.getCollidingTarget().sideHit));
                     KamiTessellator.release();
                 }
@@ -57,9 +57,9 @@ public class Trajectories extends Module {
                 GL11.glDisable(GL11.GL_TEXTURE_2D);
                 GL11.glDisable(GL11.GL_LIGHTING);
 
-                GL11.glLineWidth(2F);
+                GL11.glLineWidth(0.5F);
                 if (hit != null)
-                    GL11.glColor3f(1f, 1f, 1f);
+                    GL11.glColor3f(255f, 1f, 255f);
                 else
                     cycler.setNext();
                 GL11.glBegin(GL11.GL_LINES);
