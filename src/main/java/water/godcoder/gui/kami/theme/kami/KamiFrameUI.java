@@ -68,7 +68,6 @@ public class KamiFrameUI<T extends Frame> extends AbstractComponentUI<Frame> {
         GL11.glDisable(3042);
         GL11.glDisable(3553);
 
-        ff.drawString(component.getWidth() / 2 - ff.getStringWidth(component.getTitle()) / 2, 1, component.getTitle());
 
         int top_y = 5;
         int bottom_y = component.getTheme().getFontRenderer().getFontHeight() - 9;
